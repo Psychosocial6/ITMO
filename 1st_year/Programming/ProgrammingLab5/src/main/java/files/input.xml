@@ -1,0 +1,52 @@
+<CollectionManager>
+    <collection>
+        <FirstElem>
+            <name>Tesla Cybertruck</name>
+            <coordinates>
+                <x>10</x>
+                <y>10</y>
+            </coordinates>
+            <enginePower>150</enginePower>
+            <capacity>37.5</capacity>
+            <distanceTravelled>234</distanceTravelled>
+            <fuelType>ELECTRICITY</fuelType>
+        </FirstElem>
+
+        <SecondElem>
+            <name>Truck</name>
+            <coordinates>
+                <x>37</x>
+                <y>135</y>
+            </coordinates>
+            <enginePower>250</enginePower>
+            <capacity>1000.0</capacity>
+            <distanceTravelled>345678</distanceTravelled>
+            <fuelType>DIESEL</fuelType>
+        </SecondElem>
+
+        <ThirdElem>
+            <name>Yellow Submarine</name>
+            <coordinates>
+                <x>123</x>
+                <y>111</y>
+            </coordinates>
+            <enginePower>1200</enginePower>
+            <capacity>4537.6</capacity>
+            <distanceTravelled>234</distanceTravelled>
+            <fuelType>NUCLEAR</fuelType>
+        </ThirdElem>
+
+        <FourthElem>
+            <name>Spaceship</name>
+            <coordinates>
+                <x>23</x>
+                <y>100</y>
+            </coordinates>
+            <enginePower>10000</enginePower>
+            <capacity>345.77</capacity>
+            <distanceTravelled>123456789</distanceTravelled>
+            <fuelType>ANTIMATTER</fuelType>
+        </FourthElem>
+
+    </collection>
+</CollectionManager>

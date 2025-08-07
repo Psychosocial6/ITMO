@@ -1,0 +1,38 @@
+weeks: [1, 3, 5, 7, 9, 11, 13, 15]
+days:
+  tuesday:
+    lessons:
+      first:
+        beginning: 11:40
+        end: 13:10
+        name: Linear algebra
+        type: Lecture
+        teacher: Tushavin Gleb Vladimirovich
+        classroom: 2202
+        adress: Lomonosova 9A
+      second:
+        beginning: 13:30
+        end: 15:00
+        name: Linear algebra
+        type: Practice
+        teacher: Tushavin Gleb Vladimirovich
+        classroom: 4210
+        adress: Lomonosova 9A
+  thursday:
+    lessons:
+      first:
+        beginning: 11:40
+        end: 13:10
+        name: History of Russian science and technology
+        type: Practice
+        teacher: Belousov Alexander Sergeevich
+        classroom: 1410
+        adress: Kronversky prospect 49A
+      second:
+        beginning: 13:30
+        end: 15:00
+        name: History of Russian science and technology
+        type: Lecture
+        teacher: Belousov Alexander Sergeevich
+        classroom: 1410
+        adress: Kronversky prospect 49A

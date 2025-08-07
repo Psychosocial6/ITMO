@@ -1,0 +1,287 @@
+\documentclass{article}
+\usepackage{nopageno}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[left=1.5cm,right=1.5cm,top=1.2cm,bottom=1.2cm]{geometry}
+\date{}
+\title{КНИГА I ПРЕДЛ. XXVI. ТЕОРЕМА}
+
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+\begin{center}
+\textbf{Случай II.}
+
+Теперь пусть
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[red, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {C}
+\node[font=\tiny] at (1.5,0.1) {A}
+\end{tikzpicture}
+\end{minipage}
+  = 
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {F}
+\node[font=\tiny] at (1.5,0.1) {D}
+\end{tikzpicture}
+\end{minipage}
+, лежат 
+
+против равных углов 
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {A}
+\node[font=\tiny] at (-0.4,0.5) {C}
+\node[font=\tiny] at (0.1,0.0) {B}
+\end{tikzpicture}
+\end{minipage}
+ и 
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {D}
+\node[font=\tiny] at (-0.4,0.5) {F}
+\node[font=\tiny] at (0.1,0.0) {E}
+\end{tikzpicture}
+\end{minipage}
+.
+
+Если такое возможно, пусть
+
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.2,0.0)
+\draw[blue, thick, dash dot] (1.2,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {D}
+\node[font=\tiny] at (1.5,0.1) {E}
+\end{tikzpicture}
+\end{minipage}
+>
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {A}
+\node[font=\tiny] at (1.5,0.1) {B}
+\end{tikzpicture}
+\end{minipage}
+, тогда возьмем 
+
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {D}
+\node[font=\tiny] at (1.5,0.1) {G}
+\end{tikzpicture}
+\end{minipage}
+=
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {A}
+\node[font=\tiny] at (1.5,0.1) {B}
+\end{tikzpicture}
+\end{minipage}
+, проведем 
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[yellow, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {F}
+\node[font=\tiny] at (1.5,0.1) {G}
+\end{tikzpicture}
+\end{minipage}
+.
+
+\vspace{1.5cm}
+Тогда в 
+\begin{minipage}{2.3cm}
+\begin{tikzpicture}
+\draw[blue, ultra thick] (0.5,0.0) -- (2.0,0.0)
+\node[font=\tiny] at (0.3,0.0) {A}
+\node[font=\tiny] at (2.2,0.0) {B}
+\draw[red, ultra thick] (0.5,0.0) -- (1.0,1.5)
+\node[font=\tiny] at (1.0,1.7) {C}
+\draw[black, ultra thick] (2.0,0.0) -- (1.0,1.5)
+\end{tikzpicture}
+\end{minipage}
+и
+\begin{minipage}{2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.3,0.0) {A}
+\node[font=\tiny] at (1.7,0.0) {B}
+\draw[red, thick] (0.5,0.0) -- (1.0,1.5)
+\node[font=\tiny] at (1.0,1.7) {C}
+\draw[yellow, thick] (1.5,0.0) -- (1.0,1.5)
+\end{tikzpicture}
+\end{minipage}
+
+получим
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[red, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {C}
+\node[font=\tiny] at (1.5,0.1) {A}
+\end{tikzpicture}
+\end{minipage} =
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[orange, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {F}
+\node[font=\tiny] at (1.5,0.1) {D}
+\end{tikzpicture}
+\end{minipage}
+,
+
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {A}
+\node[font=\tiny] at (1.5,0.1) {B}
+\end{tikzpicture}
+\end{minipage} =
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {D}
+\node[font=\tiny] at (1.5,0.1) {G}
+\end{tikzpicture}
+\end{minipage}
+и
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=yellow, color=yellow] (0,0) --  (0.5:0.5) arc(0.5:60:0.5) -- cycle;
+\node[font=\tiny] at (-0.1,0.0) {A}
+\node[font=\tiny] at (0.3,0.6) {C}
+\node[font=\tiny] at (0.6,0.0) {B}
+\end{tikzpicture}
+\end{minipage}
+=
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=yellow, color=yellow] (0,0) --  (0.5:0.5) arc(0.5:60:0.5) -- cycle;
+\node[font=\tiny] at (-0.1,0.0) {D}
+\node[font=\tiny] at (0.3,0.6) {F}
+\node[font=\tiny] at (0.6,0.0) {E}
+\end{tikzpicture}
+\end{minipage}
+,
+
+\therefore
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {A}
+\node[font=\tiny] at (-0.4,0.5) {C}
+\node[font=\tiny] at (0.1,0.0) {B}
+\end{tikzpicture}
+\end{minipage}
+=
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=black, color=black] (0,0) --  (-0.5:-0.5) arc(-0.5:-55:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {D}
+\node[font=\tiny] at (-0.4,0.5) {F}
+\node[font=\tiny] at (0.1,0.0) {G}
+\end{tikzpicture}
+\end{minipage} (пр. I.4)
+
+но 
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {A}
+\node[font=\tiny] at (-0.4,0.5) {C}
+\node[font=\tiny] at (0.1,0.0) {B}
+\end{tikzpicture}
+\end{minipage} =
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {D}
+\node[font=\tiny] at (-0.4,0.5) {F}
+\node[font=\tiny] at (0.1,0.0) {E}
+\end{tikzpicture}
+\end{minipage} (гип.)
+
+\therefore
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=black, color=black] (0,0) --  (-0.5:-0.5) arc(-0.5:-55:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {D}
+\node[font=\tiny] at (-0.4,0.5) {F}
+\node[font=\tiny] at (0.1,0.0) {G}
+\end{tikzpicture}
+\end{minipage} = 
+\begin{minipage}{1cm}
+\begin{tikzpicture}
+\draw[fill=red, color=red] (0,0) --  (-0.5:-0.5) arc(-0.5:-45:-0.5) -- cycle;
+\node[font=\tiny] at (-0.6,0.0) {D}
+\node[font=\tiny] at (-0.4,0.5) {F}
+\node[font=\tiny] at (0.1,0.0) {E}
+\end{tikzpicture}
+\end{minipage} что
+не имеет смысла (пр. I.I6)
+
+\vspace{0.5cm}
+Следовательно, ни 
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, ultra thick] (0.5,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {A}
+\node[font=\tiny] at (1.5,0.1) {B}
+\end{tikzpicture}
+\end{minipage} ни
+\begin{minipage}{1.2cm}
+\begin{tikzpicture}
+\draw[blue, thick] (0.5,0.0) -- (1.2,0.0)
+\draw[blue, thick, dash dot] (1.2,0.0) -- (1.5,0.0)
+\node[font=\tiny] at (0.5,0.1) {D}
+\node[font=\tiny] at (1.5,0.1) {E}
+\end{tikzpicture}
+\end{minipage}
+не больше другой, а значит они равны. Следовательно (согласно пр. I.4) треугольники равны во всех отношениях.
+
+\begin{flushright}
+ч.т.д.
+\end{flushright}
+\end{center}
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}
+\draw[fill=yellow, color=yellow] (0.0,0.0) -- (0.5,0.0) arc(0:60:0.5) -- cycle
+\draw[fill=red, color=red] (4.0,0.0) -- (3.5,0.0) arc(180:120:0.5) -- cycle
+\draw[blue, ultra thick] (0.0,0.0) -- (4.0,0.0)
+\draw[red, ultra thick] (0.0,0.0) -- (2.0,3.5)
+\draw[black, ultra thick] (4.0,0.0) -- (2.0,3.5)
+\node[font=\tiny] at (-0.1,-0.1) {A}
+\node[font=\tiny] at (4.2,0.0) {B}
+\node[font=\tiny] at (2.0,3.7) {C}
+\end{tikzpicture}
+
+\vspace{0.5cm}
+\begin{tikzpicture}
+\draw[fill=yellow, color=yellow] (0.0,0.0) --  (0.5,0.0) arc(0:62.5:0.5) -- cycle
+\draw[fill=black, color=black] (3.0,0.0) -- (2.5,0.0) arc(180:112:0.5) -- cycle 
+\draw[fill=red, color=red] (4.0,0.0) -- (3.5,0.0) arc(180:125:0.5) -- cycle
+\draw[blue, thick] (0.0,0.0) -- (3.0,0.0)
+\draw[red, thick] (0.0,0.0) -- (1.6,3.5)
+\draw[yellow, thick] (3.0,0.0) -- (1.6,3.5)
+\draw[blue, thick, dash dot] (3.0,0.0) -- (4.0,0.0)
+\draw[black, thick] (1.6,3.5) -- (4.0,0.0)
+\node[font=\tiny] at (-0.1,-0.1) {D}
+\node[font=\tiny] at (3.0,-0.2) {G}
+\node[font=\tiny] at (4.1,-0.1) {E}
+\node[font=\tiny] at (1.6,3.7) {F}
+\end{tikzpicture}
+\end{center}
+\end{multicols}
+\end{document}

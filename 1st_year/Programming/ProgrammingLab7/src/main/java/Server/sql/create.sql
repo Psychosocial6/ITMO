@@ -1,0 +1,44 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS collection (
+	key TEXT NOT NULL,
+	element_id INTEGER,
+	owner_id INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS elements (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	coordinates_id INTEGER NOT NULL,
+	creation_date TIMESTAMP WITH TIME ZONE NOT NULL,
+	engine_power BIGINT,
+	capacity DOUBLE PRECISION,
+	distance_travelled BIGINT,
+	fuel_type TEXT
+);
+
+CREATE TABLE IF NOT EXISTS users (
+	id SERIAL PRIMARY KEY,
+	login TEXT NOT NULL,
+	password TEXT
+);
+
+CREATE TABLE IF NOT EXISTS coordinates (
+	id SERIAL PRIMARY KEY,
+	x INTEGER,
+	y BIGINT
+);
+
+ALTER TABLE collection
+ADD FOREIGN KEY(element_id) REFERENCES elements(id)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE collection
+ADD FOREIGN KEY(owner_id) REFERENCES users(id)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE elements
+ADD FOREIGN KEY(coordinates_id) REFERENCES coordinates(id)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+END;
