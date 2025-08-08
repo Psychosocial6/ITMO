@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-  <img alt="" src="https://github.com/Psychosocial6/ITMO/blob/main/.docs/smoking.gif" style="width:600; height:auto;">
+  <img alt="" src="https://github.com/Psychosocial6/ITMO/raw/main/.docs/smoking.gif" style="width:600; height:auto;">
 </div>
 
 
