@@ -1,0 +1,1 @@
+Host=localhost;Port=5432;Database=studs;Username=s465993;Password=xFxP17f4XPRHRRJR

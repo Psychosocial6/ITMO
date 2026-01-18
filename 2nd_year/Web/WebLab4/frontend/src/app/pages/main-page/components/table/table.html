@@ -1,0 +1,32 @@
+<table>
+  <thead>
+  <tr>
+    <th>№</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>R</th>
+    <th>Результат</th>
+    <th>Время выполнения, мс</th>
+    <th>Текущее время</th>
+  </tr>
+  </thead>
+  <tbody id="table-body">
+    @for (row of rows; track row.id) {
+      <tr>
+        <td class="n">{{ row.id }}</td>
+        <td class="x">{{ row.x }}</td>
+        <td class="y">{{ row.y }}</td>
+        <td class="r">{{ row.r }}</td>
+        <td class="result">{{ row.result }}</td>
+        <td class="request-time">{{ row.requestTime }}</td>
+        <td class="local-time">{{ row.localTime }}</td>
+      </tr>
+    }
+
+    @if (rows.length === 0) {
+      <tr>
+        <td colspan="7">Нет данных</td>
+      </tr>
+    }
+  </tbody>
+</table>

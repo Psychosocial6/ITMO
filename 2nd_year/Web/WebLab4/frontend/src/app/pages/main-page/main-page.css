@@ -1,0 +1,71 @@
+header {
+  font-family: serif;
+  font-size: medium;
+  color: #000000;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-row {
+  display: flex;
+  gap: 20px;
+}
+
+app-point-form,
+app-graph {
+  flex: 1;
+}
+
+.table-block {
+  height: 300px;
+  overflow-y: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1159px) and (min-width: 690px) {
+  .container {
+    gap: 40px;
+  }
+
+  .top-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  app-point-form,
+  app-graph {
+    width: 100%;
+  }
+
+  .table-block {
+    height: 250px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 689px) {
+  .container {
+    gap: 30px;
+  }
+
+  .top-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  app-point-form,
+  app-graph {
+    width: 100%;
+  }
+
+  .table-block {
+    height: 200px;
+    overflow-y: auto;
+  }
+}

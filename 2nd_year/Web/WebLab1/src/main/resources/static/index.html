@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebLab1</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!--шапка-->
+            <h1>Зыков Андрей Алексеевич | P3206 | вариант 465993</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="top-row">
+                    <!--параметры точки и графика-->
+                    <div class="block">
+                        <!--X-->
+                        <fieldset>
+                            <legend>Изменение X</legend>
+                            <div>
+                                <input type="radio" id="X-5" name="X" value="-5">
+                                <label for="X-5">-5</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X-4" name="X" value="-4">
+                                <label for="X-4">-4</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X-3" name="X" value="-3">
+                                <label for="X-3">-3</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X-2" name="X" value="-2">
+                                <label for="X-2">-2</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X-1" name="X" value="-1">
+                                <label for="X-1">-1</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X0" name="X" value="0">
+                                <label for="X0">0</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X1" name="X" checked="checked" value="1">
+                                <label for="X1">1</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X2" name="X" value="2">
+                                <label for="X2">2</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="X3" name="X" value="3">
+                                <label for="X3">3</label>
+                            </div>
+                        </fieldset>
+
+                        <!--Y-->
+                        <fieldset>
+                            <legend>Изменение Y</legend>
+                            <input type="text" id="Ytext" name="Ytext" placeholder="Значение Y (от -3 до 3)"/>
+                        </fieldset>
+
+                        <!--R-->
+                        <fieldset>
+                            <legend>Изменение R</legend>
+                            <div>
+                                <input type="radio" id="R1" name="R" value="1" checked="checked">
+                                <label for="R1">1</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="R1.5" name="R" value="1.5">
+                                <label for="R1.5">1.5</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="R2" name="R" value="2">
+                                <label for="R2">2</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="R2.5" name="R" value="2.5">
+                                <label for="R2.5">2.5</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="R3" name="R" value="3">
+                                <label for="R3">3</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="button-panel">
+                            <button name="submit" id="button" disabled>Проверить</button>
+                            <button name="clear" id="clear">Очистить таблицу</button>
+                        </div>
+
+                    </div>
+
+                    <!--график-->
+                    <div class="block">
+                        <svg id="image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+                            <!--оси-->
+                            <line x1="25" x2="375" y1="200" y2="200" stroke="#334155"/>
+                            <line x1="200" x2="200" y1="25" y2="375" stroke="#334155"/>
+
+                            <!--стрелки осей-->
+                            <polygon points="380,200 375,195 375, 205" fill="#334155" stroke="#334155"/>
+                            <polygon points="200,20 205,25 195,25" fill="#334155" stroke="#334155"/>
+
+                            <!--значения X-->
+                            <line x1="350" x2="350" y1="205" y2="195" stroke="#334155"/>
+                            <line x1="275" x2="275" y1="205" y2="195" stroke="#334155"/>
+                            <line x1="50" x2="50" y1="205" y2="195" stroke="#334155"/>
+                            <line x1="125" x2="125" y1="205" y2="195" stroke="#334155"/>
+
+                            <!--значения Y-->
+                            <line x1="205" x2="195" y1="350" y2="350" stroke="#334155"/>
+                            <line x1="205" x2="195" y1="275" y2="275" stroke="#334155"/>
+                            <line x1="205" x2="195" y1="50" y2="50" stroke="#334155"/>
+                            <line x1="205" x2="195" y1="125" y2="125" stroke="#334155"/>
+
+                            <!--подписи X-->
+                            <text x="350" y="190" stroke="#334155">R</text>
+                            <text x="275" y="190" stroke="#334155">R/2</text>
+                            <text x="50" y="190" stroke="#334155">-R</text>
+                            <text x="125" y="190" stroke="#334155">-R/2</text>
+
+                            <!--подписи Y-->
+                            <text x="210" y="350" stroke="#334155">-R</text>
+                            <text x="210" y="275" stroke="#334155">-R/2</text>
+                            <text x="210" y="50" stroke="#334155">R</text>
+                            <text x="210" y="125" stroke="#334155">R/2</text>
+
+                            <!--подписи осей-->
+                            <text x="380" y="215" stroke="#334155">X</text>
+                            <text x="185" y="20" stroke="#334155">Y</text>
+
+                            <!--фгиура-->
+                            <rect height="150" width="150" X="50" y="50" fill-opacity="0.5" stroke="#3b82f6" fill="#3b82f6"/>
+                            <polygon points="50,200 200,200 200,275" fill-opacity="0.5" stroke="#3b82f6" fill="#3b82f6"/>
+                            <path d="M 200 200 L 275 200 A 75 75 0 0 0 200 125 Z" fill="#3b82f6" stroke="#3b82f6" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="table-block">
+                    <!--таблица с результатами-->
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>№</td>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>R</td>
+                            <td>Результат попадания</td>
+                            <td>Время обработки запроса, мс</td>
+                            <td>Текущее время</td>
+                        </tr>
+                        </thead>
+
+                        <tbody id="table-body">
+                        <tr>
+                            <td class="n"></td>
+                            <td class="x"></td>
+                            <td class="y"></td>
+                            <td class="r"></td>
+                            <td class="result"></td>
+                            <td class="request-time"></td>
+                            <td class="local-time"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <template id="row-template">
+                        <tr class="data-row">
+                            <td class="n"></td>
+                            <td class="x"></td>
+                            <td class="y"></td>
+                            <td class="r"></td>
+                            <td class="result"></td>
+                            <td class="request-time"></td>
+                            <td class="local-time"></td>
+                        </tr>
+                    </template>
+                </div>
+            </div>
+
+            <div id="captcha-overlay" class="captcha-overlay">
+
+            </div>
+            <div id="captcha-modal" class="captcha-modal">
+                <div id="recaptcha-container">
+
+                </div>
+                <p id="captcha-error" class="captcha-error-message"></p>
+            </div>
+        </main>
+    </body>
+
+</html>

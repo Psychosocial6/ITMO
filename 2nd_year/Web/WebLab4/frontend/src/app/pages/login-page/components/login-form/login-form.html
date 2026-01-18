@@ -1,0 +1,14 @@
+<h2>Регистрация</h2>
+<form class="login-form">
+  <div class="input-container">
+    <input type="text" id="login" name="login" placeholder="Логин" [(ngModel)]="formData.login" required/>
+    <input type="password" id="password" name="password" placeholder="Пароль" [(ngModel)]="formData.password" required/>
+  </div>
+  <div *ngIf="message" class="error-text">
+    <small>{{ message }}</small>
+  </div>
+  <div class="buttons-container">
+    <button type="button" (click)="onLogin()" id="login-submit">Войти</button>
+    <button type="button" (click)="onRegister()" id="register-submit">Зарегистрироваться</button>
+  </div>
+</form>

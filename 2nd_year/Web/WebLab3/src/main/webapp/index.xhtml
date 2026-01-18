@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta charset="UTF-8"/>
+    <title>WebLab3</title>
+    <h:outputStylesheet library="css" name="index-styles.css"/>
+    <h:outputScript library="js" name="index.js"/>
+</h:head>
+<h:body>
+    <header>
+        <h1>Зыков Андрей Алексеевич | P3206 | вариант 273935</h1>
+    </header>
+
+    <main>
+        <div class="clock-and-date-container">
+            <div class="clock">
+                <div class="center-dot"></div>
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+            <div class="date-display"></div>
+        </div>
+        <h:form>
+            <p:commandButton styleClass="go-to-button" action="#{navigationBean.navigateMain}" value="На главную"/>
+        </h:form>
+    </main>
+</h:body>
+</html>

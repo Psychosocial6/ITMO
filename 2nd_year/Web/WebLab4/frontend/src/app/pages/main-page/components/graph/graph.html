@@ -1,0 +1,44 @@
+<div class="block">
+  <svg (click)="onSvgClick($event)" id="image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+    <rect height="75" width="150" x="200" y="200" fill-opacity="0.5" stroke="#3b82f6" fill="#3b82f6"/>
+    <polygon points="50,200 200,200 200,350" fill-opacity="0.5" stroke="#3b82f6" fill="#3b82f6"/>
+    <path d="M 200 200 L 50 200 A 150 150 0 0 1 200 50 Z" fill="#3b82f6" stroke="#3b82f6" fill-opacity="0.5"/>
+
+    <line x1="25" x2="375" y1="200" y2="200" stroke="#334155"/>
+    <line x1="200" x2="200" y1="25" y2="375" stroke="#334155"/>
+
+    <polygon points="380,200 375,195 375, 205" fill="#334155" stroke="#334155"/>
+    <polygon points="200,20 205,25 195,25" fill="#334155" stroke="#334155"/>
+
+    <line x1="350" x2="350" y1="205" y2="195" stroke="#334155"/>
+    <line x1="275" x2="275" y1="205" y2="195" stroke="#334155"/>
+    <line x1="50" x2="50" y1="205" y2="195" stroke="#334155"/>
+    <line x1="125" x2="125" y1="205" y2="195" stroke="#334155"/>
+
+    <line x1="205" x2="195" y1="350" y2="350" stroke="#334155"/>
+    <line x1="205" x2="195" y1="275" y2="275" stroke="#334155"/>
+    <line x1="205" x2="195" y1="50" y2="50" stroke="#334155"/>
+    <line x1="205" x2="195" y1="125" y2="125" stroke="#334155"/>
+
+    <text x="350" y="190" stroke="#334155">{{rValue}}</text>
+    <text x="275" y="190" stroke="#334155">{{rValue / 2}}</text>
+    <text x="50" y="190" stroke="#334155">{{-rValue}}</text>
+    <text x="125" y="190" stroke="#334155">{{-rValue / 2}}</text>
+
+    <text x="210" y="350" stroke="#334155">{{-rValue}}</text>
+    <text x="210" y="275" stroke="#334155">{{-rValue / 2}}</text>
+    <text x="210" y="50" stroke="#334155">{{rValue}}</text>
+    <text x="210" y="125" stroke="#334155">{{rValue / 2}}</text>
+
+    <text x="380" y="215" stroke="#334155">X</text>
+    <text x="185" y="20" stroke="#334155">Y</text>
+
+    <circle
+      *ngFor="let point of points"
+      [attr.cx]="getCx(point.x)"
+      [attr.cy]="getCy(point.y)"
+      r="2"
+      [attr.fill]="point.result ? 'green' : 'red'"/>
+  </svg>
+</div>

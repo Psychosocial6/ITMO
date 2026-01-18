@@ -1,0 +1,19 @@
+svg {
+  max-width: 700px;
+  max-height: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.block {
+  flex: 1;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+}
+
+:host {
+  flex: 1;
+}

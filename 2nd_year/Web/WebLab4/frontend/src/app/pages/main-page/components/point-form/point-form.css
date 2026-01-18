@@ -1,0 +1,51 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+}
+
+.button-panel {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+  margin-top: auto;
+}
+
+button {
+  padding: 5px 5px;
+  height: 50px;
+  background-color: #6A8EE1;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+}
+
+button:hover {
+  background-color: #587dcf;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+#button {
+  flex: 1;
+}
+
+#clear {
+  flex: 1;
+}
+
+:host {
+  flex: 1;
+}
+
+.message-text {
+  color: red;
+}
